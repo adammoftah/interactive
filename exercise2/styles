@@ -1,0 +1,25 @@
+body{
+	background-color: #FBFF01;
+	color: #02FF25;
+	text-align:center;
+	font-size: 150%;
+}
+
+h1{
+	font-size: 300%;
+}
+
+a{
+	font-size: 120%;
+}
+a:link{
+	color:#097E29;
+}
+
+a:visited{
+	color:#B65E00;
+}
+
+a:hover{
+	color:#68CC83;
+}
