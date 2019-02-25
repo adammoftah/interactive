@@ -1,0 +1,343 @@
+* {
+	color: #FBFF11;
+    box-sizing: border-box;
+  }
+
+img {
+	max-width: 80%;
+/*	display: block;
+*/	}
+
+/*#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(9px, 1fr));
+	}*/
+h1{
+	 font-family: Geneva, Helvetica, sans-serif;
+	 color: purple; 
+	 font-size: 500%; 
+	 text-align: center;
+	}
+
+
+body { background: red; }
+
+@media screen and (max-width: 2500px) {
+  body {
+  	background: #9900B6;
+  	color: #FBFF22;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+  	background: #7600B6;
+  	color: #FBFF11;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+  	background: #672B87;
+  	color: #F0F356;
+  	}
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+  	background: #A65DCD;
+  	color: #CED100;
+  }
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(4px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+  	background: #AC11FF;
+  	color: #F1F33B;
+  }
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	}
+}
+
+
+@media screen and (max-width: 1100px) {
+  body {
+  	background: #9900B6;
+  	color: #FBFF22;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+  	background: #7600B6;
+  	color: #FBFF11;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+	}
+}
+
+@media screen and (max-width: 900px) {
+  body {
+  	background: #672B87;
+  	color: #F0F356;
+  	}
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+	}
+}
+
+@media screen and (max-width: 800px) {
+  body {
+  	background: #A65DCD;
+  	color: #CED100;
+  }
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(4px, 1fr));
+	}
+}
+
+@media screen and (max-width: 700px) {
+  body {
+  	background: #AC11FF;
+  	color: #F1F33B;
+  }
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	}
+}
+
+@media screen and (max-width: 600px) {
+  body {
+  	background: #9900B6;
+  	color: #FBFF22;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+}
+
+@media screen and (max-width: 500px) {
+  body {
+  	background: #7600B6;
+  	color: #FBFF11;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+	}
+}
+
+@media screen and (max-width: 400px) {
+  body {
+  	background: #672B87;
+  	color: #F0F356;
+  	}
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}
+
+body { background: red; }
+
+@media screen and (max-width: 2450px) {
+  body {
+  	background: #0093B4;
+  	color: #FBFF33;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1550px) {
+  body {
+  	background: #28D5FC;
+  	color: #89FF15;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1450px) {
+  body {
+  	background: #0AC4DE;
+  	color: #F0F356;
+  	}
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1350px) {
+  body {
+  	background: #A65129;
+  	color: #CED100;
+  }
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1250px) {
+  body {
+  	background: #0A7ADE;
+  	color: #F1F33B;
+  }
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+	}
+}
+
+
+@media screen and (max-width: 1150px) {
+  body {
+  	background: #0A3ADE;
+  	color: #FBFF55;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1050px) {
+  body {
+  	background: #73B2F1;
+  	color: #FBFF11;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	}
+}
+
+@media screen and (max-width: 950px) {
+  body {
+  	background: #062D81;
+  	color: #F0F356;
+  	}
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+}
+
+@media screen and (max-width: 850px) {
+  body {
+  	background: #12B3FE;
+  	color: #CED100;
+  }
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(12px, 1fr));
+	}
+}
+
+@media screen and (max-width: 750px) {
+  body {
+  	background: #04339E;
+  	color: #F1F33B;
+  }
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+	}
+}
+
+@media screen and (max-width: 650px) {
+  body {
+  	background: #3A049E;
+  	color: #FBFF22;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+}
+
+@media screen and (max-width: 550px) {
+  body {
+  	background: #5F0AFF;
+  	color: #FBFF11;
+  }
+#archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	}
+}
+
+@media screen and (max-width: 450px) {
+  body {
+  	background: #8F56FA;
+  	color: #F0F356;
+  	}
+  #archives {
+	align-self: all;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+	}
+}
+
+
+
