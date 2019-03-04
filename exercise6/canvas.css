@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html>
+body {
+	background: black;
+}
 
-<head>
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+}
 
-	<title>CSS Still Life 1</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" href="canvas.css">
-	<
-
-	<style>
-	.canvas {
-		/* if you want to change the background of your canvas, do it here */
-		background: #1A60EA;
-		z-index: 0;
-	}
-
-	/* this is where you can style the objects in your still life */
-	#duck{
+#duck{
 		height: 350px;
 		width: 300px;
 		top: 15%;
@@ -120,9 +113,9 @@
 	    top: 14%;
 	    left: 3%;
 	    transition: 1s background ease-out;
-  		-webkit-transition: 0.3s background ease-out;
-  		-moz-transition: 0.3s background ease-out;
-	    -o-transition: 0.3s background ease-out;
+  		-webkit-transition: 0.1s background ease-out;
+  		-moz-transition: 0.1s background ease-out;
+	    -o-transition: 0.1s background ease-out;
 	}
 
 	#duck #eye #iris.hover{
@@ -167,127 +160,85 @@
 
 	}
 
-	#catch{
-		width: 50px;
-		height: 50px;
-		position: absolute;
-/*		border: 2px solid red;
-*/		top: 41%;
-		left: 38%;
-		transform: scale(1);
 
-	}
-    #catch #talkbubble {
-    	transform: scale(0.1);
-   		width: 120px;
-   		height: 80px;
-    	top: 0%;
-    	left: 0%;
-      	background: purple;
-      	position: relative;
-      	-moz-border-radius: 10px;
-      	-webkit-border-radius: 10px;
-      	border-radius: 10px;
-      	z-index: 1;
-    }
-    
-    #catch #talkbubble:before {
-      content: "";
-      position: absolute;
-      right: 100%;
-      top: 16px;
-      width: 0;
-      height: 0;
-      border-top: 13px solid transparent;
-      border-right: 26px solid purple;
-      border-bottom: 13px solid transparent;
+   	#talkbubble {
+   	display: none;
+    transform: scale(1);
+    width: 120px;
+    height: 80px;
+    top: 38%;
+    left: 23%;
+    background: purple;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+	#talkbubble:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 16px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid purple;
+    border-bottom: 13px solid transparent;
     }	
 
-    #catch:hover {
-		transform: scale(10);
-	}	
 
-	.clementine{
-		height: 60px;
-		width: 60px;
-		background:#ff8e01;;
-		border-radius: 75%;
-		position: absolute;
+    #talkbubble.night{
+    	display: show;
+    }
+
+.lilDucks{
+		border-radius: 70%;
+/*		border: 2px dotted yellow;
+*/		position: absolute;
+		left: 0%;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-name: travel;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: absolute;
+	-webkit-animation-timing-function: ease-in-out;
 	}
 
-	.clementine.one{
-		left: 230px;
-		top: 100px;
-		z-index: 3;
+.lilDucks.one{
+	height: 35px;
+	width: 30px;
+	top: 10%
+
+}
+
+.lilDucks.two{
+	height: 45px;
+	width: 33px;
+	top: 14%
+
+}
+
+.lilDucks.three{
+	height: 25px;
+	width: 20px;
+	top: 8%
+
+}
+
+
+@-webkit-keyframes travel {
+	0% {
+		left(0%);
 	}
-	.clementine.two{
-		left: 550px;
-		top: 60px;
-		z-index: 4;
+	25% {
+		left(25%);
 	}
-	.clementine.three{
-		left: 360px;
-		top: 370px;
-		z-index: 5;
+	50% {
+		left(50%);
 	}
-	
-
-	#flame {
-		background: yellow;
-	    height: 19px;
-	    width: 19px;
-	    position: absolute;
-	    left: 26px;
-	    top: -2px;
-	    border-top-right-radius: 50%;
-	    transform: rotate(45deg);
-	    border-bottom-right-radius: 50%;
-	    border-bottom-left-radius: 50%;
-		-webkit-animation-duration: 1s;
-		-webkit-animation-name: flicker;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-direction: alternate;
-		-webkit-animation-timing-function: ease-in-out;
+	100% {
+		left(100%);
 	}
+}
 
-
-
-
-	</style>
-
-</head>
-
-<body>
-
-		<!-- this starts the canvas div. do not delete this! -->
-    <div class="canvas">
-
-			<!-- below is where you put your objects in your still life -->
-			<div id="duck">
-				<div id="bottom"></div>
-				<div id="chest"></div>
-				<div id="wing"></div>
-				<div id="beak"></div>
-				<div id="foot1"></div>
-				<div id="foot2"></div>
-				<div id="eye">
-					<div id="iris">
-						<div id="color"></div>
-					</div>
-				</div>
-
-			</div>
-			<div id="catch">
-			<div id="talkbubble" style="text-align: center;"><br><br>QUACK!</div>
-			</div>
-
-
-		<!-- this ends the canvas div. do not delete this! -->
-    </div>
-
-
-<script src="js/jquery.min.js"></script>
-<script src="js/script.js"></script>
-</body>
-
-</html>

@@ -23,7 +23,7 @@ h1{
   h4{
     font-family: Geneva; 
     color: yellow; 
-    size: 200%;
+    size: 1%;
     }
 
 
@@ -34,6 +34,11 @@ body { background: red; }
   	background: #9900B6;
   	color: #FBFF22;
   }
+  h4{
+    font-family: Geneva; 
+    color: yellow; 
+    size: 200%;
+    }
 #archives {
 	align-self: all;
 	display: grid;
@@ -136,6 +141,11 @@ body { background: red; }
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(4px, 1fr));
 	}
+  h4{
+    font-family: Geneva; 
+    color: yellow; 
+    size: 200%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -148,6 +158,11 @@ body { background: red; }
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 	}
+  h4{
+    font-family: Geneva; 
+    color: yellow; 
+    size: 200%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -307,6 +322,11 @@ body { background: red; }
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
 	}
+  h4{
+    font-family: Geneva; 
+    color: yellow; 
+    size: 200%;
+    }
 }
 
 @media screen and (max-width: 650px) {

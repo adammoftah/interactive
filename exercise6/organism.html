@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="canvas.css">
+
+	<style>
+	.canvas {
+		/* if you want to change the background of your canvas, do it here */
+		background: #1A60EA;
+		z-index: 0;
+	}
+
+	/* this is where you can style the objects in your still life */
+
+	</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+    <div class="canvas">
+
+			<!-- below is where you put your objects in your still life -->
+			<div id="duck">
+				<div id="bottom"></div>
+				<div id="chest"></div>
+				<div id="wing"></div>
+				<div id="beak"></div>
+				<div id="foot1"></div>
+				<div id="foot2"></div>
+				<div id="eye">
+					<div id="iris">
+						<div id="color"></div>
+					</div>
+				</div>
+			</div>
+			<class id="lilDucks.one"></class>
+			<class id="lilDucks.two"></class>
+			<class id="lilDucks.three"></class>
+			<div id="talkbubble" style="text-align: center;"><br><br>QUACK!</div>
+			</div>
+
+
+		<!-- this ends the canvas div. do not delete this! -->
+    </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+var eyeClosed = false;
+$('#eye').hover(function(){
+	if (eyeClosed == false) {
+		eye.style.background = "#e2e20f";
+		iris.style.background = "#e2e20f";
+		color.style.background = "#e2e20f"
+		eyeClosed = true;
+	} else {
+		eye.style.background = "white";
+		iris.style.background = "black";
+		color.style.background = "green";
+		eyeClosed = false;
+	}
+
+})
+
+
+
+
+$('#beak').click(function(){
+	if (talkbubble.style.display == "none") {
+		talkbubble.style.display = "block";
+	} else {
+			talkbubble.style.display = "none";
+	}
+
+})
+})
+      
+</script>
+</body>
+
+</html>
